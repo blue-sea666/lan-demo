@@ -1,0 +1,19 @@
+server:
+  port: 8800
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/springboot-test?useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: localhost
+    port: 6379
+    password:
+    database: 0
+
+jwt:
+  secret: 5d4b9e1f9b56c8bcd3e1842d7c3a9f73f69464d9e93f8a041fddad22936f49e2
+  expire: 1800 # 30????
+  refresh: 86400 # 1?????
